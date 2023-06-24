@@ -1,0 +1,69 @@
+@import "vars";
+
+.main-section {
+    background-image: linear-gradient(115deg, $main-background-gradient-first, $main-background-gradient-second),
+        url("../images/main-section-background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 100vh;
+    padding: 3%;
+
+    @media screen and (max-width: $lg) {
+        padding: 5% 0;
+    }
+
+    .main-section__text-area {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2vw;
+        .main-section__text-area--title {
+            text-align: center;
+            @include def_text("Georgia", normal, 500, 87.44px, 110.5%, $main-white);
+        }
+        .main-section__text-area--text {
+            text-align: center;
+            @include def_text("Georgia", normal, 200, 28.44px, 110.5%, $main-white);
+        }
+        .main-section__text-area--button {
+            min-width: 40%;
+            margin-top: 20px;
+            @include def_btn($accent-color, 2rem, 14px 36px, none);
+            @include def_text("Georgia", normal, 200, 25px, 100%, $btn-text);
+        }
+
+        @media screen and (max-width: $lg) {
+            width: 80%;
+        }
+    }
+
+    .main-section__img-area {
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .main-section__img-area--img {
+            width: 30vw;
+            height: 30vw;
+            border-radius: 50%;
+            object-fit: cover;
+
+            @media screen and (max-width: $lg) {
+                width: 70vw;
+                height: 70vw;
+            }
+        }
+        @media screen and (max-width: $lg) {
+            margin-top: 5%;
+        }
+    }
+
+    @media screen and (max-width: $lg) {
+        flex-direction: column;
+    }
+}
