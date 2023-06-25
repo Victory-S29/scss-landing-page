@@ -24,16 +24,13 @@
         border-radius: 2rem;
 
         @media screen and (max-width: $lg) {
-           margin-top: 7%;
+            margin-top: 7%;
         }
 
         .advantages-section--block__img {
             width: 64px;
             height: 64px;
             object-fit: cover;
-
-            @media screen and (max-width: $lg) {
-            }
         }
 
         .advantages-section--block__text {
