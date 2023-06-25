@@ -5,7 +5,7 @@
 }
 
 .main-section {
-  background-image: linear-gradient(115deg, rgba(11, 9, 9, 0.7882352941), rgba(11, 9, 9, 0.7529411765)), url("../images/main-section-background.jpg");
+  background-image: linear-gradient(180deg, rgba(11, 9, 9, 0.7882352941), rgba(11, 9, 9, 0.7529411765), #13100e), url("../images/main-section-background.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -35,6 +35,16 @@
   font-size: 87.44px;
   line-height: 110.5%;
   color: #ffffff;
+}
+@media screen and (max-width: 992px) {
+  .main-section .main-section__text-area .main-section__text-area--title {
+    font-family: "Georgia";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 67.44px;
+    line-height: 110.5%;
+    color: #ffffff;
+  }
 }
 .main-section .main-section__text-area .main-section__text-area--text {
   text-align: center;
@@ -95,4 +105,49 @@
   .main-section {
     flex-direction: column;
   }
+}
+
+.advantages-section {
+  background-color: #13100e;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20%, 1fr));
+  justify-items: center;
+  padding: 15vh 0;
+}
+@media screen and (max-width: 992px) {
+  .advantages-section {
+    grid-template-columns: 1fr;
+    padding: 8vh 0;
+  }
+}
+.advantages-section .advantages-section--block {
+  background-color: #bd9e80;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2vh;
+  padding: 8% 0%;
+  text-align: center;
+  border-radius: 2rem;
+}
+@media screen and (max-width: 992px) {
+  .advantages-section .advantages-section--block {
+    margin-top: 7%;
+  }
+}
+.advantages-section .advantages-section--block .advantages-section--block__img {
+  width: 64px;
+  height: 64px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.advantages-section .advantages-section--block .advantages-section--block__text {
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 200;
+  font-size: 18px;
+  line-height: 100%;
+  color: #13100e;
+  width: 70%;
 }/*# sourceMappingURL=page-style.css.map */

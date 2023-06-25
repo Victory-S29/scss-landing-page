@@ -1,0 +1,44 @@
+@import "vars";
+
+.advantages-section {
+    background-color: $main-background;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20%, 1fr));
+    justify-items: center;
+    padding: 15vh 0;
+
+    @media screen and (max-width: $lg) {
+        grid-template-columns: 1fr;
+        padding: 8vh 0;
+    }
+
+    .advantages-section--block {
+        background-color: $accent-color;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2vh;
+        padding: 8% 0%;
+        text-align: center;
+        border-radius: 2rem;
+
+        @media screen and (max-width: $lg) {
+           margin-top: 7%;
+        }
+
+        .advantages-section--block__img {
+            width: 64px;
+            height: 64px;
+            object-fit: cover;
+
+            @media screen and (max-width: $lg) {
+            }
+        }
+
+        .advantages-section--block__text {
+            @include def_text("Georgia", normal, 200, 18px, 100%, $btn-text);
+            width: 70%;
+        }
+    }
+}
