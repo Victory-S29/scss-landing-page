@@ -150,4 +150,99 @@
   line-height: 100%;
   color: #13100e;
   width: 70%;
+}
+
+.advertisement-section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 100vh;
+  padding: 3%;
+  background-color: #13100e;
+}
+@media screen and (max-width: 992px) {
+  .advertisement-section {
+    padding: 5% 0;
+  }
+}
+.advertisement-section .advertisement-section__text-area {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2vw;
+}
+.advertisement-section .advertisement-section__text-area .advertisement-section__text-area--title {
+  text-align: center;
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 87.44px;
+  line-height: 110.5%;
+  color: #ffffff;
+}
+@media screen and (max-width: 992px) {
+  .advertisement-section .advertisement-section__text-area .advertisement-section__text-area--title {
+    font-family: "Georgia";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 67.44px;
+    line-height: 110.5%;
+    color: #ffffff;
+  }
+}
+.advertisement-section .advertisement-section__text-area .advertisement-section__text-area--text {
+  text-align: center;
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 200;
+  font-size: 28.44px;
+  line-height: 110.5%;
+  color: #ffffff;
+}
+.advertisement-section .advertisement-section__text-area .advertisement-section__text-area--button {
+  min-width: 40%;
+  margin-top: 20px;
+  background-color: #bd9e80;
+  border-radius: 2rem;
+  padding: 14px 36px;
+  border: none;
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 200;
+  font-size: 25px;
+  line-height: 100%;
+  color: #13100e;
+}
+.advertisement-section .advertisement-section__text-area .advertisement-section__text-area--button:hover {
+  cursor: pointer;
+}
+@media screen and (max-width: 992px) {
+  .advertisement-section .advertisement-section__text-area {
+    width: 80%;
+  }
+}
+.advertisement-section .advertisement-section__img-area {
+  width: 30vw;
+  height: 30vw;
+  border-radius: 2rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-image: linear-gradient(90deg, #13100e, rgba(19, 16, 14, 0.0823529412)), url("../images/adv-section-img.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+@media screen and (max-width: 992px) {
+  .advertisement-section .advertisement-section__img-area {
+    width: 70vw;
+    height: 70vw;
+    margin-top: 5%;
+    background-image: url("../images/adv-section-img.jpg");
+  }
+}
+@media screen and (max-width: 992px) {
+  .advertisement-section {
+    flex-direction: column;
+  }
 }/*# sourceMappingURL=page-style.css.map */

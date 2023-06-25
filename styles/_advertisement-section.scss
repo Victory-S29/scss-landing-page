@@ -1,0 +1,65 @@
+@import "vars";
+
+.advertisement-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 100vh;
+    padding: 3%;
+    background-color: $main-background;
+    @media screen and (max-width: $lg) {
+        padding: 5% 0;
+    }
+
+    .advertisement-section__text-area {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2vw;
+        .advertisement-section__text-area--title {
+            text-align: center;
+            @include def_text("Georgia", normal, 500, 87.44px, 110.5%, $main-white);
+            @media screen and (max-width: $lg) {
+                @include def_text("Georgia", normal, 500, 67.44px, 110.5%, $main-white);
+            }
+        }
+        .advertisement-section__text-area--text {
+            text-align: center;
+            @include def_text("Georgia", normal, 200, 28.44px, 110.5%, $main-white);
+        }
+        .advertisement-section__text-area--button {
+            min-width: 40%;
+            margin-top: 20px;
+            @include def_btn($accent-color, 2rem, 14px 36px, none);
+            @include def_text("Georgia", normal, 200, 25px, 100%, $btn-text);
+        }
+
+        @media screen and (max-width: $lg) {
+            width: 80%;
+        }
+    }
+
+    .advertisement-section__img-area {
+        width: 30vw;
+        height: 30vw;
+        border-radius: 2rem;
+        object-fit: cover;
+        background-image: linear-gradient(90deg, $main-background, $adv-background-gradient),
+            url("../images/adv-section-img.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+
+        @media screen and (max-width: $lg) {
+            width: 70vw;
+            height: 70vw;
+            margin-top: 5%;
+            background-image: url("../images/adv-section-img.jpg");
+        }
+    }
+
+    @media screen and (max-width: $lg) {
+        flex-direction: column;
+    }
+}
