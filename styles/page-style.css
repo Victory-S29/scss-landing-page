@@ -253,12 +253,12 @@
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   gap: 20px;
-  padding: 10px 20px;
+  padding: 10px 20px 40px 20px;
 }
 @media screen and (max-width: 992px) {
   .recipes-section {
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(2 1fr);
+    grid-template-rows: repeat(2, 1fr);
   }
 }
 .recipes-section .recipes-section__block {
@@ -300,4 +300,89 @@
   font-size: 20px;
   line-height: 100%;
   color: #13100e;
+}
+
+.footer {
+  background-color: #1a1512;
+  border-top: 2px solid #13100e;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 30px 50px;
+}
+@media screen and (max-width: 992px) {
+  .footer {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+.footer .footer-icons-list {
+  width: 60%;
+  list-style: none;
+}
+@media screen and (max-width: 992px) {
+  .footer .footer-icons-list {
+    width: 90%;
+  }
+}
+.footer .footer-icons-list .footer-icons-list--item {
+  margin-top: 10px;
+}
+@media screen and (max-width: 992px) {
+  .footer .footer-icons-list .footer-icons-list--item {
+    text-align: center;
+  }
+}
+.footer .footer-icons-list .footer-icons-list--item .footer-icons-list--item-link {
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 200;
+  font-size: 18px;
+  line-height: 100%;
+  color: white;
+  text-decoration: none;
+}
+.footer .footer--form {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+@media screen and (max-width: 992px) {
+  .footer .footer--form {
+    width: 90%;
+  }
+}
+.footer .footer--form .footer--form__input {
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 200;
+  font-size: 20px;
+  line-height: 100%;
+  color: #13100e;
+  color: #13100e;
+  border: none;
+  border-radius: 0.2rem;
+}
+.footer .footer--form .footer--form__input ::-moz-placeholder {
+  color: #13100e;
+}
+.footer .footer--form .footer--form__input ::placeholder {
+  color: #13100e;
+}
+.footer .footer--form .footer--form__button {
+  background-color: #ce9c6a;
+  border-radius: 0;
+  padding: 5px 36px;
+  border: none;
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 200;
+  font-size: 25px;
+  line-height: 100%;
+  color: #13100e;
+  cursor: pointer;
+}
+.footer .footer--form .footer--form__button:hover {
+  cursor: pointer;
 }/*# sourceMappingURL=page-style.css.map */
