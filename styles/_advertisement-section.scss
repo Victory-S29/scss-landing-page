@@ -4,9 +4,9 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    min-height: 100vh;
+    min-height: 80vh;
     padding: 3%;
-    background-color: $main-background;
+    background: linear-gradient(180deg, $main-background, $recipes-background);
     @media screen and (max-width: $lg) {
         padding: 5% 0;
     }

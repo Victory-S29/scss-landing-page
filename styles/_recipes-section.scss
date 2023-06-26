@@ -1,0 +1,38 @@
+@import "vars";
+
+.recipes-section {
+    display: grid;
+    background-color: $recipes-background;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+    padding: 10px 20px;
+    .recipes-section__block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: $accent-color;
+        border-radius: 2rem;
+        padding: 10px;
+        .recipes-section__block--img-container {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 10px;
+            border: 3px solid $btn-text;
+            padding: 6px;
+            border-radius: 2rem;
+            .recipes-section__block--img {
+                width: 15vw;
+                height: 15vw;
+                object-fit: cover;
+                border-radius: 2rem;
+            }
+        }
+        .recipes-section__block--text {
+            text-align: center;
+            width: 80%;
+            text-align: center;
+            @include def_text("Georgia", normal, 200, 20px, 100%, $btn-text);
+        }
+    }
+}
