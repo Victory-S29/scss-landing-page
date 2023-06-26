@@ -255,6 +255,12 @@
   gap: 20px;
   padding: 10px 20px;
 }
+@media screen and (max-width: 992px) {
+  .recipes-section {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2 1fr);
+  }
+}
 .recipes-section .recipes-section__block {
   display: flex;
   flex-direction: column;
@@ -277,6 +283,12 @@
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 2rem;
+}
+@media screen and (max-width: 992px) {
+  .recipes-section .recipes-section__block .recipes-section__block--img-container .recipes-section__block--img {
+    width: 25vw;
+    height: 25vw;
+  }
 }
 .recipes-section .recipes-section__block .recipes-section__block--text {
   text-align: center;

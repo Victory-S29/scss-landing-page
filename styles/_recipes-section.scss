@@ -7,6 +7,12 @@
     grid-template-rows: 1fr 1fr;
     gap: 20px;
     padding: 10px 20px;
+
+    @media screen and (max-width: $lg) {
+        grid-template-columns:1fr;
+        grid-template-rows: repeat(2 1fr);
+    }
+
     .recipes-section__block {
         display: flex;
         flex-direction: column;
@@ -26,6 +32,11 @@
                 height: 15vw;
                 object-fit: cover;
                 border-radius: 2rem;
+
+                @media screen and (max-width: $lg) {
+                    width: 25vw;
+                    height: 25vw;
+                }
             }
         }
         .recipes-section__block--text {
